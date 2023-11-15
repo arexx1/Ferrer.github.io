@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+       .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}     
+    body {
+        background-color: lightgray;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+</style>
+  <title>Contact Information</title>
+</head>
+<body>
+    <header class="l-header">
+      <div class="navbar">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about.html" class="nav__link">About</a>
+            <a href="skills.html" class="nav__link">Skills</a>
+            <a href="work.html" class="nav__link">Hobbies</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+          </div>
+        </div>
+      </div>
+        <nav class="nav bd-grid">
+            <div>
+                <a href="student.html" class="nav__logo" style="color: purple;">JUSTINE</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="work.html" class="nav__link">Hobbies</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+     
+    <br><br>
+  <div class="container text-center mt-5">
+    <h2 class="section-title">Contact Information</h2>
+    <br><br>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingEmail">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEmail" aria-expanded="true" aria-controls="collapseEmail">
+              EMAIL
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseEmail" class="collapse show" aria-labelledby="headingEmail" data-parent="#accordion">
+          <div class="card-body">
+            <strong>Email:</strong> <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMvxvPCVSLnRbPFKhCjrZtVvsnhTwnDpLQTJhcLndNXmqvDNZfWWHBMWQGSxvKrhfhsfh">justineferrer.basc@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingPhone">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePhone" aria-expanded="false" aria-controls="collapsePhone">
+              PHONE
+            </button>
+          </h5>
+        </div>
+        <div id="collapsePhone" class="collapse" aria-labelledby="headingPhone" data-parent="#accordion">
+          <div class="card-body">
+            <strong>Phone:</strong> +639613033672 <br>      +639554418264
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingAddress">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAddress" aria-expanded="false" aria-controls="collapseAddress">
+              ADDRESS
+            </button>
+          </h5>
+        </div>
+        <div id="collapseAddress" class="collapse" aria-labelledby="headingAddress" data-parent="#accordion">
+          <div class="card-body">
+            <strong>Address:</strong> <a href="https://www.google.com/maps/@15.1286272,121.0303217,16z?authuser=0&entry=ttu">#291 Balubaran Street Balaong San Miguel, Bulacan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

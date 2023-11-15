@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+         .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}   
+        body {
+            background-color: lightgray;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+    </style>
+    <title>HOBBIES</title>
+</head>
+<body>
+    <header class="l-header">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+              <button class="dropbtn">More
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="about.html" class="nav__link">About</a>
+                <a href="skills.html" class="nav__link">Skills</a>
+                <a href="work.html" class="nav__link">Hobbies</a>
+                <a href="contact.html" class="nav__link">Contact</a>
+              </div>
+            </div>
+          </div>
+        <nav class="nav bd-grid">
+            <div>
+                <a href="student.html" class="nav__logo" style="color: purple;">JUSTINE</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="work.html" class="nav__link">Hobbies</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!--===== WORK =====-->
+    <section class="hobby section" id="work">
+        <h2 class="section-title">Hobbies</h2>
+
+        <div class="work__container bd-grid">
+            <a href="" class="work__img">
+                <img src="assets/img/billiards-5489526_1280.jpg" alt=""> Playing Billiards
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/comupting.jpeg" alt=""> Playing Computer Games
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/driving.jpg" alt=""> Driving
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/hiking.jpg" alt=""> Hiking
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/travel.jpg" alt=""> Traveling Accross the Country
+            </a>
+            <a href="" class="work__img">
+                <img src="assets/img/mobilni-hry-multiplayer-e1626102711264.jpg" alt=""> Playing Mobile Games
+            </a>
+        </div>
+    </section>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
